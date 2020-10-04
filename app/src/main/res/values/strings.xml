@@ -11,4 +11,6 @@
     <string name="Phone">make and manage phone calls</string>
     <string name="contacts_title">Contacts</string>
     <string name="contacts">access your contacts</string>
+    <string name="continue_btn">CONTINUE</string>
+    <string name="cancel_btn">CANCEL</string>
 </resources>
