@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Access settings</string>
+    <string name="title_allow_access">Choose what to allow App to access</string>
+    <string name="storage">access photos, media, and files on your device</string>
+    <string name="storage_title">Storage</string>
+    <string name="location_title">Location</string>
+    <string name="location">access this device\'s location</string>
+    <string name="camara">take pictures and record video</string>
+    <string name="camara_title">Camara</string>
+    <string name="phone_title">Phone</string>
+    <string name="Phone">make and manage phone calls</string>
+</resources>
