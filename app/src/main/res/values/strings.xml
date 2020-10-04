@@ -9,4 +9,6 @@
     <string name="camara_title">Camara</string>
     <string name="phone_title">Phone</string>
     <string name="Phone">make and manage phone calls</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="contacts">access your contacts</string>
 </resources>

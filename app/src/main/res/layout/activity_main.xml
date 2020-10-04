@@ -98,5 +98,25 @@
             android:layout_marginLeft="101dp" android:layout_marginStart="101dp" android:layout_marginEnd="47dp"
             android:layout_marginRight="47dp" app:layout_constraintEnd_toEndOf="parent" android:textSize="12sp"
             android:textColor="@android:color/background_light"/>
+    <TextView
+            android:text="@string/contacts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView6"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/switch9" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="101dp" android:layout_marginStart="101dp"
+            android:textColor="@android:color/background_light" android:textStyle="bold"
+            android:layout_marginEnd="253dp"
+            android:layout_marginRight="253dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <Switch
+            android:text="@string/contacts"
+            android:layout_width="265dp"
+            android:layout_height="27dp"
+            android:id="@+id/switch10"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="101dp" android:layout_marginStart="101dp" android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp" app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@android:color/background_light" android:textSize="12sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
