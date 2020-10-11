@@ -125,7 +125,7 @@
             android:layout_marginRight="49dp" app:layout_constraintEnd_toEndOf="parent"
             style="@style/Widget.AppCompat.Button.Borderless" android:textColor="@android:color/background_light"
             android:layout_marginLeft="20dp" android:layout_marginStart="20dp"
-            app:layout_constraintStart_toEndOf="@+id/button2"/>
+            app:layout_constraintStart_toEndOf="@+id/button2" android:onClick="when_clicked_continue_btn"/>
     <Button
             android:text="@string/cancel_btn"
             android:layout_width="98dp"

@@ -13,4 +13,9 @@
     <string name="contacts">access your contacts</string>
     <string name="continue_btn">CONTINUE</string>
     <string name="cancel_btn">CANCEL</string>
+    <string name="storage_activity_text">STORAGE</string>
+    <string name="location_activity_text">LOCATION</string>
+    <string name="camara_activity_text">CAMARA</string>
+    <string name="phone_activity_text">PHONE</string>
+    <string name="contacts_activity_text">CONTACTS</string>
 </resources>
