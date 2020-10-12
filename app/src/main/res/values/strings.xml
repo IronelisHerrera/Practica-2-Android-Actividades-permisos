@@ -18,4 +18,5 @@
     <string name="camara_activity_text">CAMARA</string>
     <string name="phone_activity_text">PHONE</string>
     <string name="contacts_activity_text">CONTACTS</string>
+    <string name="snackbar_camara_text">Acceder a la cámara</string>
 </resources>
