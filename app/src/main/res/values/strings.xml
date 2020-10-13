@@ -6,7 +6,7 @@
     <string name="location_title">Location</string>
     <string name="location">access this device\'s location</string>
     <string name="camara">take pictures and record video</string>
-    <string name="camara_title">Camara</string>
+    <string name="camara_title">Camera</string>
     <string name="phone_title">Phone</string>
     <string name="Phone">make and manage phone calls</string>
     <string name="contacts_title">Contacts</string>
@@ -15,7 +15,7 @@
     <string name="cancel_btn">CANCEL</string>
     <string name="storage_activity_text">STORAGE</string>
     <string name="location_activity_text">LOCATION</string>
-    <string name="camara_activity_text">CAMARA</string>
+    <string name="camara_activity_text">CAMERA</string>
     <string name="phone_activity_text">PHONE</string>
     <string name="contacts_activity_text">CONTACTS</string>
     <string name="snackbar_camara_text">Acceder a la cámara</string>
