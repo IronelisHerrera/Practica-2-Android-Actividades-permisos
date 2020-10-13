@@ -20,8 +20,6 @@ import static android.Manifest.permission.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button cancel_btn;
-    Button continue_btn;
     Switch storage_switch_btn;
     Switch location_switch_btn;
     Switch camara_switch_btn;
@@ -36,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        cancel_btn = findViewById(R.id.button2);
+        Button cancel_btn = findViewById(R.id.button2);
 
         //Search switch ids componentents
         storage_switch_btn = findViewById(R.id.switch6);
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         camara_switch_btn = findViewById(R.id.switch8);
         phone_switch_btn = findViewById(R.id.switch9);
         contacts_switch_btn = findViewById(R.id.switch10);
-        continue_btn = findViewById(R.id.button_continue);
+        Button continue_btn = findViewById(R.id.button_continue);
 
         //close the application
         cancel_btn.setOnClickListener(new View.OnClickListener() {
@@ -57,18 +55,15 @@ public class MainActivity extends AppCompatActivity {
         check_already_granted_permission();
     }
 
-    private Boolean check_already_granted_permission(){
+    private void check_already_granted_permission(){
 
          if(ContextCompat.checkSelfPermission(MainActivity.this, READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
              storage_switch_btn.setChecked(true);
              storage_switch_btn.setClickable(false);
-
-
          }
          if(ContextCompat.checkSelfPermission(MainActivity.this, ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
              location_switch_btn.setChecked(true);
              location_switch_btn.setClickable(false);
-
          }
          if(ContextCompat.checkSelfPermission(MainActivity.this, CAMERA) == PackageManager.PERMISSION_GRANTED){
              camara_switch_btn.setChecked(true);
@@ -78,14 +73,11 @@ public class MainActivity extends AppCompatActivity {
          if(ContextCompat.checkSelfPermission(MainActivity.this, CALL_PHONE) == PackageManager.PERMISSION_GRANTED){
              phone_switch_btn.setChecked(true);
              phone_switch_btn.setClickable(false);
-
-
          }
          if(ContextCompat.checkSelfPermission(MainActivity.this, READ_CONTACTS) == PackageManager.PERMISSION_GRANTED){
              contacts_switch_btn.setChecked(true);
              contacts_switch_btn.setClickable(false);
          }
-        return false;
     }
 
     public void when_clicked_continue_btn(View continue_btn){
@@ -120,10 +112,8 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(MainActivity.this, request_permissions_array.toArray(new String[0]), CODE_REQUEST_PERMISSION);
 
         }else {
-            //Intent continue_btn_intent = new Intent(getApplicationContext(), given_permission.class);
             startActivity(continue_btn_intent);
         }
-        //startActivity(continue_btn_intent_first);
 
     }
 

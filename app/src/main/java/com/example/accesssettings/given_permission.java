@@ -42,7 +42,6 @@ public class given_permission extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_given_permission);
-        //Intent get_continue_btn_intent = getIntent();
         storage = findViewById(R.id.storage_btn_id);
         location = findViewById(R.id.location_btn_id);
         storage_image = findViewById(R.id.imageView_storage);
@@ -225,10 +224,8 @@ public class given_permission extends AppCompatActivity {
         requestPermissions(new String[] {Manifest.permission.READ_CONTACTS}, 200);
     }
 
-
     private void check_contacts() {
         Intent check_contacts = new Intent(Intent.ACTION_PICK);
-        //Intent check_contacts = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
         check_contacts.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
         if(check_contacts.resolveActivity(getPackageManager()) != null){
             startActivityForResult(check_contacts, CONTACTS_CODE);
